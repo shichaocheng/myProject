@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<root>
+  <config ConfigVer="1.0.0.0">
+    <HGP_A8_Update function_name="A8自升级" path="/home/DeviceInitTest/SCU_Update">
+      <point DataName="A8平台自升级设置" type="RW" DataAddress="32321" />
+      <point DataName="A8平台升级文件反馈态" type="R" DataAddress="29901" />
+    </HGP_A8_Update>
+    <FaultWave function_name="故障录波" path="/home/SGLogger/FaultWave">
+      <point DataName="故障录波状态" type="R" DataAddress="29911" />
+      <point DataName="故障录波开关" type="RW" DataAddress="32301" />
+    </FaultWave>
+    <HisData function_name="历史记录" path="/home/SGLogger/HisData">
+    </HisData>
+    <Update function_name="固件在线升级" path="/home/SGLogger/Update" CAN2_DEV="6" CAN1_DEV="2">
+      <point DataName="固件编码" type="RW" DataAddress="32311" />
+      <point DataName="固件版本号" type="RW" DataAddress="32312" />
+      <point DataName="固件上传" type="RW" DataAddress="32313" />
+      <point DataName="固件升级设置确认" type="RW" DataAddress="32314" />
+      <point DataName="固件升级文件反馈" type="R" DataAddress="29921" />
+      <point DataName="CAN1端口-升级状态" type="R" DataAddress="29922" />
+      <point DataName="CAN2端口-升级状态" type="R" DataAddress="29923" />
+      <point DataName="COM端口-升级状态" type="R" DataAddress="29924" />
+      <point DataName="后台升级编码" type="R" DataAddress="29925" />
+      <point DataName="后台固件版本号" type="R" DataAddress="29926" />
+      <point DataName="CAN2_1设备固件编码" type="R" DataAddress="29927" />
+      <point DataName="CAN2_1设备固件版本号" type="R" DataAddress="29928" />
+      <point DataName="CAN2_1升级进度" type="R" DataAddress="29929" />
+      <point DataName="CAN2_2设备固件编码" type="R" DataAddress="29930" />
+      <point DataName="CAN2_2设备固件版本号" type="R" DataAddress="29931" />
+      <point DataName="CAN2_2升级进度" type="R" DataAddress="29932" />
+      <point DataName="CAN2_3设备固件编码" type="R" DataAddress="29933" />
+      <point DataName="CAN2_3设备固件版本号" type="R" DataAddress="29934" />
+      <point DataName="CAN2_3升级进度" type="R" DataAddress="29935" />
+      <point DataName="CAN1_4设备固件编码" type="R" DataAddress="29936" />
+      <point DataName="CAN1_4设备固件版本号" type="R" DataAddress="29937" />
+      <point DataName="CAN1_4升级进度" type="R" DataAddress="29938" />
+      <point DataName="CAN2_13设备固件编码" type="R" DataAddress="29939" />
+      <point DataName="CAN2_13设备固件版本号" type="R" DataAddress="29940" />
+      <point DataName="CAN2_13升级进度" type="R" DataAddress="29941" />
+      <point DataName="CAN2_14设备固件编码" type="R" DataAddress="29942" />
+      <point DataName="CAN2_14设备固件版本号" type="R" DataAddress="29943" />
+      <point DataName="CAN2_14升级进度" type="R" DataAddress="29944" />
+      <point DataName="CAN2_15设备固件编码" type="R" DataAddress="29945" />
+      <point DataName="CAN2_15设备固件版本号" type="R" DataAddress="29946" />
+      <point DataName="CAN2_15升级进度" type="R" DataAddress="29947" />
+      <point DataName="CAN1_16设备固件编码" type="R" DataAddress="29948" />
+      <point DataName="CAN1_16设备固件版本号" type="R" DataAddress="29949" />
+      <point DataName="CAN1_16升级进度" type="R" DataAddress="29950" />
+      <point DataName="COM升级编码" type="R" DataAddress="29951" />
+      <point DataName="COM升级固件版本号" type="R" DataAddress="29952" />
+      <point DataName="COM升级进度" type="R" DataAddress="29953" />
+    </Update>
+    <HeatCount function_name="心跳反馈">
+      <point DataName="心跳计数" type="R" DataAddress="32001" />
+    </HeatCount>
+    <HGP_A8_Workstate function_name="整机工作状态显示">
+      <point DataName="整机工作状态" type="R" DataAddress="32079" />
+    </HGP_A8_Workstate>
+  </config>
+  <protocol ProtocolCode="0x01000000" ProtocolVer="1.0.0.0">
+    <table id="1" cmd="4" unit="0">
+      <register type="R" regNum="23" startAddress="32001">
+        <point DataName="协议号" DataId="1" DataAddress="32001" ShowId="1" DataLen="4" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="协议版本" DataId="1" DataAddress="32003" ShowId="1" DataLen="4" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号1" DataId="1" DataAddress="32005" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号2" DataId="1" DataAddress="32006" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号3" DataId="1" DataAddress="32007" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号4" DataId="1" DataAddress="32008" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号5" DataId="1" DataAddress="32009" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号6" DataId="1" DataAddress="32010" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号7" DataId="1" DataAddress="32011" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号8" DataId="1" DataAddress="32012" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号9" DataId="1" DataAddress="32013" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="SN序列号10" DataId="1" DataAddress="32014" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号1" DataId="1" DataAddress="32015" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号2" DataId="1" DataAddress="32016" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号3" DataId="1" DataAddress="32017" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号4" DataId="1" DataAddress="32018" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号5" DataId="1" DataAddress="32019" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号6" DataId="1" DataAddress="32020" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号7" DataId="1" DataAddress="32021" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="机器型号8" DataId="1" DataAddress="32022" ShowId="1" DataLen="2" DataInfo="整机属性信息" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="设备类型编码" DataId="1" DataAddress="32023" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="1" cmd="4" unit="0">
+      <register type="R" regNum="48" startAddress="32041">
+        <point DataName="整机日用电量" DataId="1" DataAddress="32041" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kWh" />
+        <point DataName="整机月用电量" DataId="1" DataAddress="32043" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kWh" />
+        <point DataName="整机年用电量" DataId="1" DataAddress="32045" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kWh" />
+        <point DataName="整机总用电量" DataId="1" DataAddress="32047" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xffffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kWh" />
+        <point DataName="整机日运行分钟" DataId="1" DataAddress="32049" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="1440" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="min" />
+        <point DataName="整机总运行时数" DataId="1" DataAddress="32050" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="h" />
+        <point DataName="整机交流侧AB线电压" DataId="1" DataAddress="32052" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整机交流侧BC线电压" DataId="1" DataAddress="32053" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整机交流侧CA线电压" DataId="1" DataAddress="32054" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整机交流侧A相总电流" DataId="1" DataAddress="32055" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="600000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整机交流侧B相总电流" DataId="1" DataAddress="32057" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="600000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整机交流侧C相总电流" DataId="1" DataAddress="32059" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="600000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整机交流侧总有功功率" DataId="1" DataAddress="32061" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW" />
+        <point DataName="整机交流侧总无功功率" DataId="1" DataAddress="32063" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-200000" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kvar" />
+        <point DataName="整机交流侧总视在功率" DataId="1" DataAddress="32065" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kVA" />
+        <point DataName="整机交流侧功率因数" DataId="1" DataAddress="32067" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="S" DataDecimal="0.001" DataMin="-1000" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="整机交流侧电网频率" DataId="1" DataAddress="32068" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="40000" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="Hz" />
+        <point DataName="整机直流侧总输出电压" DataId="1" DataAddress="32069" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整机直流侧总输出电流" DataId="1" DataAddress="32070" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="300000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整机直流侧总输出功率" DataId="1" DataAddress="32072" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW" />
+        <point DataName="整机交流侧对地绝缘阻抗" DataId="1" DataAddress="32074" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="整机直流侧对地绝缘阻抗" DataId="1" DataAddress="32076" ShowId="1" DataLen="4" DataInfo="整机运行数据" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="整机外部平均环温" DataId="1" DataAddress="32078" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="℃" />
+        <point DataName="整机工作状态" DataId="1" DataAddress="32079" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机告警状态1" DataId="1" DataAddress="32080" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机告警状态保留2" DataId="1" DataAddress="32081" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机故障状态1" DataId="1" DataAddress="32082" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机故障状态保留2" DataId="1" DataAddress="32083" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机故障状态保留3" DataId="1" DataAddress="32084" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="设备通讯状态" DataId="1" DataAddress="32085" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="心跳计数" DataId="1" DataAddress="32086" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机交流断路器开关状态" DataId="1" DataAddress="32087" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整机直流开关状态" DataId="1" DataAddress="32088" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+      </register>
+    </table>
+    <table id="2" cmd="4" unit="1">
+      <register type="R" regNum="37" startAddress="32101">
+        <point DataName="整流单元1交流侧AB线电压" DataId="1" DataAddress="32101" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整流单元1交流侧BC线电压" DataId="1" DataAddress="32102" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整流单元1交流侧CA线电压" DataId="1" DataAddress="32103" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整流单元1交流侧A相电感平均电流" DataId="1" DataAddress="32104" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整流单元1交流侧B相电感平均电流" DataId="1" DataAddress="32105" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整流单元1交流侧C相电感平均电流" DataId="1" DataAddress="32106" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整流单元1交流侧有功功率" DataId="1" DataAddress="32107" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="20000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW" />
+        <point DataName="整流单元1交流侧无功功率" DataId="1" DataAddress="32108" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-20000" DataMax="20000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kvar" />
+        <point DataName="整流单元1交流侧视在功率" DataId="1" DataAddress="32109" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="20000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kVA" />
+        <point DataName="整流单元1交流侧功率因数" DataId="1" DataAddress="32110" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="S" DataDecimal="0.001" DataMin="-1000" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1交流侧电网频率" DataId="1" DataAddress="32111" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="40000" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="Hz" />
+        <point DataName="整流单元1直流侧开关前输出电压" DataId="1" DataAddress="32112" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="整流单元1直流侧正线输出总电流" DataId="1" DataAddress="32113" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整流单元1直流侧输出功率" DataId="1" DataAddress="32114" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="20000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW" />
+        <point DataName="整流单元1交流侧对地绝缘阻抗" DataId="1" DataAddress="32115" ShowId="1" DataLen="4" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="0x7fffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="整流单元1直流侧对地绝缘阻抗" DataId="1" DataAddress="32117" ShowId="1" DataLen="4" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="0x7fffffff" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="整流单元1整机对地漏电流" DataId="1" DataAddress="32119" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="整流单元1工作状态" DataId="1" DataAddress="32120" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1告警寄存器1" DataId="1" DataAddress="32121" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1告警寄存器2" DataId="1" DataAddress="32122" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1告警寄存器3" DataId="1" DataAddress="32123" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1告警寄存器4" DataId="1" DataAddress="32124" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器1" DataId="1" DataAddress="32125" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器2" DataId="1" DataAddress="32126" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器3" DataId="1" DataAddress="32127" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器4" DataId="1" DataAddress="32128" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器5" DataId="1" DataAddress="32129" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器6" DataId="1" DataAddress="32130" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器7" DataId="1" DataAddress="32131" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1故障寄存器8" DataId="1" DataAddress="32132" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度1_外部环温" DataId="1" DataAddress="32133" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="℃" />
+        <point DataName="整流单元1机柜电子腔体温度" DataId="1" DataAddress="32134" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="℃" />
+        <point DataName="整流单元1机柜电子腔体湿度" DataId="1" DataAddress="32135" ShowId="1" DataLen="2" DataInfo="单元运行数据" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="%RH" />
+        <point DataName="整流单元1交流断路器开关状态" DataId="1" DataAddress="32136" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+        <point DataName="整流单元1直流开关状态" DataId="1" DataAddress="32137" ShowId="1" DataLen="2" DataInfo="整机运行数据" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="0" />
+      </register>
+    </table>
+    <table id="6" cmd="4" unit="1">
+      <register type="R" regNum="54" startAddress="28501">
+        <point DataName="整流单元1PWM软件版本号1" DataId="1" DataAddress="28501" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号2" DataId="1" DataAddress="28502" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号3" DataId="1" DataAddress="28503" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号4" DataId="1" DataAddress="28504" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号5" DataId="1" DataAddress="28505" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号6" DataId="1" DataAddress="28506" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号7" DataId="1" DataAddress="28507" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM软件版本号8" DataId="1" DataAddress="28508" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号1" DataId="1" DataAddress="28509" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号2" DataId="1" DataAddress="28510" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号3" DataId="1" DataAddress="28511" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号4" DataId="1" DataAddress="28512" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号5" DataId="1" DataAddress="28513" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号6" DataId="1" DataAddress="28514" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号7" DataId="1" DataAddress="28515" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck软件版本号8" DataId="1" DataAddress="28516" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1单次运行用电量" DataId="1" DataAddress="28517" ShowId="1" DataLen="4" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="0x7FFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1交流侧共模电流" DataId="1" DataAddress="28519" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1中间直流全母线电压" DataId="1" DataAddress="28520" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1中间直流上半母线电压" DataId="1" DataAddress="28521" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1中间直流下半母线电压" DataId="1" DataAddress="28522" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1中间直流母线输出电流" DataId="1" DataAddress="28523" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧A相电感平均电流" DataId="1" DataAddress="28524" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧B相电感平均电流" DataId="1" DataAddress="28525" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧C相电感平均电流" DataId="1" DataAddress="28526" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧开关后输出电压" DataId="1" DataAddress="28527" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧负线输出总电流" DataId="1" DataAddress="28528" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流侧共模电流" DataId="1" DataAddress="28529" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM_A相模组最高温度" DataId="1" DataAddress="28530" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM_B相模组最高温度" DataId="1" DataAddress="28531" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1PWM_C相模组最高温度" DataId="1" DataAddress="28532" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck_A相模组最高温度" DataId="1" DataAddress="28533" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck_B相模组最高温度" DataId="1" DataAddress="28534" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1Buck_C相模组最高温度" DataId="1" DataAddress="28535" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度2_交流框架断路器" DataId="1" DataAddress="28536" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度3_交流电抗器" DataId="1" DataAddress="28537" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度4" DataId="1" DataAddress="28538" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度5" DataId="1" DataAddress="28539" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度6" DataId="1" DataAddress="28540" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度7_直流电抗器" DataId="1" DataAddress="28541" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度8_直流负荷开关" DataId="1" DataAddress="28542" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度9" DataId="1" DataAddress="28543" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1NTC检测温度10" DataId="1" DataAddress="28544" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-1000" DataMax="2000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1主功率风扇1转速" DataId="1" DataAddress="28545" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1主功率风扇2转速" DataId="1" DataAddress="28546" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1换热器风扇1" DataId="1" DataAddress="28547" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1换热器风扇2" DataId="1" DataAddress="28548" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1扰流风扇1" DataId="1" DataAddress="28549" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1扰流风扇2" DataId="1" DataAddress="28550" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1扰流风扇3" DataId="1" DataAddress="28551" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1扰流风扇4" DataId="1" DataAddress="28552" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="60000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1初始设置成功标志" DataId="1" DataAddress="28553" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1DSP位信息" DataId="1" DataAddress="28554" ShowId="1" DataLen="2" DataInfo="单元属性参数" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="10" cmd="4" unit="0">
+      <register type="R" regNum="53" startAddress="29901">
+        <point DataName="A8平台升级文件反馈" DataId="1" DataAddress="29901" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="故障录波状态" DataId="1" DataAddress="29911" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="固件升级文件反馈" DataId="1" DataAddress="29921" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1端口-升级状态" DataId="1" DataAddress="29922" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2端口-升级状态" DataId="1" DataAddress="29923" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="COM端口-升级状态" DataId="1" DataAddress="29924" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="后台升级编码" DataId="1" DataAddress="29925" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="后台固件版本号" DataId="1" DataAddress="29926" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_1设备固件编码" DataId="1" DataAddress="29927" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_1设备固件版本号" DataId="1" DataAddress="29928" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_1升级进度" DataId="1" DataAddress="29929" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_2设备固件编码" DataId="1" DataAddress="29930" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_2设备固件版本号" DataId="1" DataAddress="29931" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_2升级进度" DataId="1" DataAddress="29932" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_3设备固件编码" DataId="1" DataAddress="29933" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_3设备固件版本号" DataId="1" DataAddress="29934" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_3升级进度" DataId="1" DataAddress="29935" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_4设备固件编码" DataId="1" DataAddress="29936" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_4设备固件版本号" DataId="1" DataAddress="29937" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_4升级进度" DataId="1" DataAddress="29938" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_13设备固件编码" DataId="1" DataAddress="29939" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_13设备固件版本号" DataId="1" DataAddress="29940" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_13升级进度" DataId="1" DataAddress="29941" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_14设备固件编码" DataId="1" DataAddress="29942" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_14设备固件版本号" DataId="1" DataAddress="29943" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_14升级进度" DataId="1" DataAddress="29944" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_15设备固件编码" DataId="1" DataAddress="29945" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_15设备固件版本号" DataId="1" DataAddress="29946" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN2_15升级进度" DataId="1" DataAddress="29947" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_16设备固件编码" DataId="1" DataAddress="29948" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_16设备固件版本号" DataId="1" DataAddress="29949" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="CAN1_16升级进度" DataId="1" DataAddress="29950" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="COM升级编码" DataId="1" DataAddress="29951" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="COM升级固件版本号" DataId="1" DataAddress="29952" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="COM升级进度" DataId="1" DataAddress="29953" ShowId="1" DataLen="2" DataInfo="整机调试反馈" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+      </register>
+    </table>
+    <table id="11" cmd="3" unit="0">
+      <register type="RW" regNum="51" startAddress="28501">
+        <point DataName="PC_Year" DataId="1" DataAddress="28501" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="2000" DataMax="2038" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="PC_Mon" DataId="1" DataAddress="28502" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="1" DataMax="12" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="PC_Day" DataId="1" DataAddress="28503" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="1" DataMax="31" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="PC_Hour" DataId="1" DataAddress="28504" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="23" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="PC_Min" DataId="1" DataAddress="28505" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="59" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="PC_Sec" DataId="1" DataAddress="28506" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="59" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="开关机设置" DataId="1" DataAddress="28507" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0xCD" DataMax="0xCF" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="通信模式设置" DataId="1" DataAddress="28508" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x55" DataMax="0xAA" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="工作模式设置" DataId="1" DataAddress="28509" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="2" RevFunc="0" SendFunc="0" FifoFunc="0" />
+        <point DataName="工作模式0_输出电流设置" DataId="1" DataAddress="28510" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="22000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="工作模式0_输出电流斜率设置" DataId="1" DataAddress="28512" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="4" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A/s" />
+        <point DataName="工作模式0_输出电压限幅值设置" DataId="1" DataAddress="28514" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="8200" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="工作模式1_输出电压设置" DataId="1" DataAddress="28515" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="8200" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="工作模式1_输出电压斜率设置" DataId="1" DataAddress="28516" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="1" DataMax="50000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V/s" />
+        <point DataName="工作模式1_输出电流限幅值设置" DataId="1" DataAddress="28517" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="88000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="工作模式2_输出功率设置" DataId="1" DataAddress="28519" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="14250" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW" />
+        <point DataName="工作模式2_输出功率斜率设置" DataId="1" DataAddress="28521" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="4" DataMax="200000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kW/s" />
+        <point DataName="工作模式2_输出电压限幅值设置" DataId="1" DataAddress="28523" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="8200" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="工作模式2_输出电流限幅值设置" DataId="1" DataAddress="28524" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="88000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="关机斜率设置" DataId="1" DataAddress="28526" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="1" DataMax="100" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="%/s" />
+        <point DataName="无功调节选择" DataId="1" DataAddress="28527" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x55" DataMax="0xA3" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="有功/无功优先" DataId="1" DataAddress="28528" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="无功上升斜率" DataId="1" DataAddress="28529" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="5" DataMax="20000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="%/s" />
+        <point DataName="无功下降斜率" DataId="1" DataAddress="28530" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="5" DataMax="20000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="%/s" />
+        <point DataName="PF模式_功率因数设置" DataId="1" DataAddress="28531" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="S" DataDecimal="0.001" DataMin="-1000" DataMax="1000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Qt模式_无功功率设置" DataId="1" DataAddress="28532" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="S" DataDecimal="0.1" DataMin="-30000" DataMax="30000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kvar" />
+        <point DataName="QP模式_无功功率百分比设置" DataId="1" DataAddress="28533" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="S" DataDecimal="0.001" DataMin="-1050" DataMax="1050" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="交流侧输入过压值设置" DataId="1" DataAddress="28534" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="4500" DataMax="6100" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="交流侧输入欠压值设置" DataId="1" DataAddress="28535" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="4500" DataMax="6100" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="交流侧输入过流值设置" DataId="1" DataAddress="28536" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="8000" DataMax="74400" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="交流侧输入过频值设置" DataId="1" DataAddress="28538" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="44800" DataMax="55200" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="Hz" />
+        <point DataName="交流侧输入欠频值设置" DataId="1" DataAddress="28539" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="44800" DataMax="55200" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="Hz" />
+        <point DataName="三相输入电压不平衡度阈值设置" DataId="1" DataAddress="28540" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="20" DataMax="200" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="三相输入电流不平衡度阈值设置" DataId="1" DataAddress="28541" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="20" DataMax="200" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="交流侧绝缘阻抗阈值设置" DataId="1" DataAddress="28542" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="5000" DataMax="1000000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="直流侧输出过压值设置" DataId="1" DataAddress="28544" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="2500" DataMax="10000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="直流侧总输出过流值设置" DataId="1" DataAddress="28545" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="8000" DataMax="100000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="直流侧绝缘阻抗阈值设置" DataId="1" DataAddress="28547" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="5000" DataMax="1000000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="kΩ" />
+        <point DataName="故障自动恢复时间" DataId="1" DataAddress="28549" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="1000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="S" />
+        <point DataName="直流负荷开关脱扣" DataId="1" DataAddress="28550" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="1" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="海拔设置" DataId="1" DataAddress="28551" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0" DataMax="6000" DataMin1="0" DataMax1="0" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="12" cmd="3" unit="0">
+      <register type="RW" regNum="30" startAddress="32001">
+        <point DataName="PWM电压环Kp" DataId="1" DataAddress="32001" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电压环Ki" DataId="1" DataAddress="32002" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电压环输出限幅OutMax" DataId="1" DataAddress="32004" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电压环输出限幅OutMin" DataId="1" DataAddress="32005" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电感电流环Kp" DataId="1" DataAddress="32006" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电感电流环Ki" DataId="1" DataAddress="32007" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电感电流环输出限幅OutMax" DataId="1" DataAddress="32009" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM电感电流环输出限幅OutMin" DataId="1" DataAddress="32010" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM锁相环Kp" DataId="1" DataAddress="32011" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM锁相环Ki" DataId="1" DataAddress="32012" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM5次谐波抑制Kp" DataId="1" DataAddress="32016" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM5次谐波抑制Ki" DataId="1" DataAddress="32017" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM5次谐波抑制输出限幅OutMax" DataId="1" DataAddress="32019" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM5次谐波抑制输出限幅OutMin" DataId="1" DataAddress="32020" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM7次谐波抑制Kp" DataId="1" DataAddress="32021" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM7次谐波抑制Ki" DataId="1" DataAddress="32022" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM7次谐波抑制输出限幅OutMax" DataId="1" DataAddress="32024" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM7次谐波抑制输出限幅OutMin" DataId="1" DataAddress="32025" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM环流抑制Kp" DataId="1" DataAddress="32026" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM环流抑制Ki" DataId="1" DataAddress="32027" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM环流抑制输出限幅OutMax" DataId="1" DataAddress="32029" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="PWM环流抑制输出限幅OutMin" DataId="1" DataAddress="32030" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="13" cmd="3" unit="0">
+      <register type="RW" regNum="15" startAddress="32101">
+        <point DataName="Buck电感电流环Kp" DataId="1" DataAddress="32101" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck电感电流环Ki" DataId="1" DataAddress="32102" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck电感电流环输出限幅OutMax" DataId="1" DataAddress="32104" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck电感电流环输出限幅OutMin" DataId="1" DataAddress="32105" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck总输出电流环Kp" DataId="1" DataAddress="32106" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck总输出电流环Ki" DataId="1" DataAddress="32107" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck总输出电流环输出限幅OutMax" DataId="1" DataAddress="32109" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck总输出电流环输出限幅OutMin" DataId="1" DataAddress="32110" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck输出电压环Kp" DataId="1" DataAddress="32111" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck输出电压环Ki" DataId="1" DataAddress="32112" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck输出电压环输出限幅OutMax" DataId="1" DataAddress="32114" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="Buck输出电压环输出限幅OutMin" DataId="1" DataAddress="32115" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.001" DataMin="50" DataMax="15000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="14" cmd="3" unit="0">
+      <register type="RW" regNum="7" startAddress="32151">
+        <point DataName="恢复出厂设置" DataId="1" DataAddress="32151" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="交流侧共模分量阈值设置" DataId="1" DataAddress="32152" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="100" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="中间母线直流过压值设置" DataId="1" DataAddress="32153" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="7000" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="中间母线直流欠压值设置" DataId="1" DataAddress="32154" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="7000" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="V" />
+        <point DataName="中间母线直流过流值设置" DataId="1" DataAddress="32155" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="0" DataMax="20000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="直流侧输出电感过流值设置" DataId="1" DataAddress="32156" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="1000" DataMax="10000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+        <point DataName="直流侧共模分量阈值设置" DataId="1" DataAddress="32157" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="F" DataSign="U" DataDecimal="0.1" DataMin="100" DataMax="1000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="A" />
+      </register>
+    </table>
+    <table id="15" cmd="3" unit="0">
+      <register type="RW" regNum="10" startAddress="32201">
+        <point DataName="日用电量误差" DataId="1" DataAddress="32201" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="S" DataDecimal="1" DataMin="-1000000" DataMax="1000000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="月用电量误差" DataId="1" DataAddress="32203" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="S" DataDecimal="1" DataMin="-1000000" DataMax="1000000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="年用电量误差" DataId="1" DataAddress="32205" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="S" DataDecimal="1" DataMin="-1000000" DataMax="1000000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="总用电量误差" DataId="1" DataAddress="32207" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="S" DataDecimal="1" DataMin="-1000000" DataMax="1000000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="清空用电量" DataId="1" DataAddress="32209" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="制氢电源控制器地址" DataId="1" DataAddress="32210" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x1" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="16" cmd="3" unit="0">
+      <register type="RW" regNum="22" startAddress="32301">
+        <point DataName="故障录波开关" DataId="1" DataAddress="32301" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="固件编码" DataId="1" DataAddress="32311" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="固件版本号" DataId="1" DataAddress="32312" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="固件上传" DataId="1" DataAddress="32313" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="固件升级设置" DataId="1" DataAddress="32314" ShowId="1" DataLen="4" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFFFFFFFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="A8平台自升级设置" DataId="1" DataAddress="32321" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="单元模板切换" DataId="1" DataAddress="32322" ShowId="1" DataLen="2" DataInfo="整机参数设置" DataType="I" DataSign="U" DataDecimal="1" DataMin="0x0" DataMax="0xFF" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+    <table id="17" cmd="3" unit="1">
+      <register type="RW" regNum="4" startAddress="32401">
+        <point DataName="整流单元1直流输出电压校准_斜率" DataId="1" DataAddress="32401" ShowId="1" DataLen="2" DataInfo="单元参数设置" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流输出电压校准_偏置" DataId="1" DataAddress="32402" ShowId="1" DataLen="2" DataInfo="单元参数设置" DataType="F" DataSign="S" DataDecimal="0.01" DataMin="-30000" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流输出总电流校准_斜率" DataId="1" DataAddress="32403" ShowId="1" DataLen="2" DataInfo="单元参数设置" DataType="F" DataSign="U" DataDecimal="0.01" DataMin="0" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+        <point DataName="整流单元1直流输出总电流校准_偏置" DataId="1" DataAddress="32404" ShowId="1" DataLen="2" DataInfo="单元参数设置" DataType="F" DataSign="S" DataDecimal="0.01" DataMin="-30000" DataMax="30000" RevFunc="0" SendFunc="0" FifoFunc="0" DataUnit="" />
+      </register>
+    </table>
+  </protocol>
+  <appendix>
+    <bit id="1" StateType="Fault" DataName="整流单元1故障寄存器1">
+      <list BitId="0" BitName="（直流）C相模组故障" />
+      <list BitId="1" BitName="（直流）B相模组故障" />
+      <list BitId="2" BitName="（直流）A相模组故障" />
+      <list BitId="3" BitName="（直流）C相模组超温" />
+      <list BitId="4" BitName="（直流）B相模组超温" />
+      <list BitId="5" BitName="（直流）A相模组超温" />
+      <list BitId="8" BitName="直流电感超温" />
+    </bit>
+    <bit id="2" StateType="Fault" DataName="整流单元1故障寄存器2">
+      <list BitId="0" BitName="（直流）C相电流传感器坏" />
+      <list BitId="1" BitName="（直流）B相电流传感器坏" />
+      <list BitId="2" BitName="（直流）A相电流传感器坏" />
+      <list BitId="3" BitName="直流负线电流传感器坏" />
+      <list BitId="4" BitName="直流正线电流传感器坏" />
+      <list BitId="5" BitName="直流电流传感器误差大" />
+      <list BitId="6" BitName="Buck并机电流不平衡故障" />
+      <list BitId="7" BitName="Buck并机通信故障" />
+      <list BitId="8" BitName="直流防雷器动作" />
+      <list BitId="9" BitName="直流负荷开关故障" />
+      <list BitId="10" BitName="烟感高故障" />
+      <list BitId="11" BitName="直流绝缘阻抗低" />
+      <list BitId="15" BitName="直流输出电压采样误差大" />
+    </bit>
+    <bit id="3" StateType="Fault" DataName="整流单元1故障寄存器3">
+      <list BitId="0" BitName="直流共模电流超标" />
+      <list BitId="1" BitName="电感电流不平衡" />
+      <list BitId="2" BitName="直流总输出短路" />
+      <list BitId="3" BitName="直流总输出过流" />
+      <list BitId="4" BitName="（直流）C相电感过流" />
+      <list BitId="5" BitName="（直流）B相电感过流" />
+      <list BitId="6" BitName="（直流）A相电感过流" />
+      <list BitId="7" BitName="直流输入过流" />
+      <list BitId="11" BitName="Buck_CPLD故障" />
+      <list BitId="12" BitName="拨码开关异常故障" />
+      <list BitId="13" BitName="直流输出电压过压" />
+      <list BitId="14" BitName="直流输入电压欠压" />
+      <list BitId="15" BitName="直流输入电压过压" />
+    </bit>
+    <bit id="4" StateType="Fault" DataName="整流单元1故障寄存器4">
+      <list BitId="0" BitName="（交流）C相模组故障" />
+      <list BitId="1" BitName="（交流）B相模组故障" />
+      <list BitId="2" BitName="（交流）A相模组故障" />
+      <list BitId="3" BitName="（交流）C相模组超温" />
+      <list BitId="4" BitName="（交流）B相模组超温" />
+      <list BitId="5" BitName="（交流）A相模组超温" />
+      <list BitId="6" BitName="PWM_CPLD故障" />
+      <list BitId="8" BitName="交流电感超温" />
+      <list BitId="15" BitName="外部环温过高" />
+    </bit>
+    <bit id="5" StateType="Fault" DataName="整流单元1故障寄存器5">
+      <list BitId="0" BitName="（交流）C相电流传感器坏" />
+      <list BitId="1" BitName="（交流）B相电流传感器坏" />
+      <list BitId="2" BitName="（交流）A相电流传感器坏" />
+      <list BitId="3" BitName="直流放电板坏" />
+      <list BitId="4" BitName="缓起电路失效" />
+      <list BitId="5" BitName="缓起电路接触器坏" />
+      <list BitId="6" BitName="交流绝缘检测接触器坏" />
+      <list BitId="7" BitName="风扇供电接触器坏" />
+      <list BitId="8" BitName="交流防雷器动作" />
+      <list BitId="9" BitName="交流框架断路器故障" />
+      <list BitId="10" BitName="并机熔丝坏（主机判断）" />
+      <list BitId="11" BitName="交流绝缘阻抗低" />
+      <list BitId="12" BitName="消防报警" />
+      <list BitId="13" BitName="中间母线电压不平衡" />
+      <list BitId="14" BitName="中间母线采样电压异常" />
+      <list BitId="15" BitName="交流输入电压采样误差大" />
+    </bit>
+    <bit id="6" StateType="Fault" DataName="整流单元1故障寄存器6">
+      <list BitId="0" BitName="交流共模电流超标" />
+      <list BitId="1" BitName="PWM并机不平衡故障" />
+      <list BitId="3" BitName="三相交流输入电流不平衡" />
+      <list BitId="4" BitName="（交流）C相电感过流" />
+      <list BitId="5" BitName="（交流）B相电感过流" />
+      <list BitId="6" BitName="（交流）A相电感过流" />
+      <list BitId="7" BitName="整机漏电流高" />
+      <list BitId="8" BitName="交流输入直流分量高" />
+      <list BitId="9" BitName="直流母线电压欠压" />
+      <list BitId="10" BitName="直流母线电压过压" />
+      <list BitId="11" BitName="交流输入欠频" />
+      <list BitId="12" BitName="交流输入过频" />
+      <list BitId="13" BitName="三相交流输入电压不平衡" />
+      <list BitId="14" BitName="交流输入电压欠压" />
+      <list BitId="15" BitName="交流输入电压过压" />
+    </bit>
+    <bit id="7" StateType="Fault" DataName="整流单元1故障寄存器7">
+      <list BitId="4" BitName="内循环风扇4坏（故障）" />
+      <list BitId="5" BitName="内循环风扇3坏（故障）" />
+      <list BitId="6" BitName="内循环风扇2坏（故障）" />
+      <list BitId="7" BitName="内循环风扇1坏（故障）" />
+      <list BitId="10" BitName="换热器风扇2坏（故障）" />
+      <list BitId="11" BitName="换热器风扇1坏（故障）" />
+      <list BitId="14" BitName="主功率风扇2坏（故障）" />
+      <list BitId="15" BitName="主功率风扇1坏（故障）" />
+    </bit>
+    <bit id="8" StateType="Fault" DataName="整流单元1故障寄存器8">
+      <list BitId="0" BitName="与Buck控制板通信断" />
+      <list BitId="2" BitName="并机间载波同步断" />
+      <list BitId="3" BitName="与并机通信断" />
+      <list BitId="5" BitName="与风扇控制板通信断" />
+      <list BitId="6" BitName="与温湿度检测板通信断" />
+      <list BitId="7" BitName="与绝缘阻抗检测板通信断" />
+      <list BitId="8" BitName="与面板灯板通信断" />
+      <list BitId="14" BitName="与主功率风扇2通信断" />
+      <list BitId="15" BitName="与主功率风扇1通信断" />
+    </bit>
+    <bit id="9" StateType="Fault" DataName="整机故障状态1">
+      <list BitId="1" BitName="PWM设备1故障" />
+      <list BitId="2" BitName="PWM设备2故障" />
+      <list BitId="3" BitName="PWM设备3故障" />
+      <list BitId="4" BitName="PWM设备4故障" />
+    </bit>
+    <bit id="10" StateType="Fault" DataName="设备通讯状态">
+      <list BitId="1" BitName="PWM1通讯异常" />
+      <list BitId="2" BitName="PWM2通讯异常" />
+      <list BitId="3" BitName="PWM3通讯异常" />
+      <list BitId="4" BitName="PWM4通讯异常" />
+      <list BitId="13" BitName="硬接线板通讯异常" />
+    </bit>
+    <bit id="1" StateType="Waring" DataName="整流单元1告警寄存器1">
+      <list BitId="0" BitName="（直流）C相模块温度告警" />
+      <list BitId="1" BitName="（直流）B相模块温度告警" />
+      <list BitId="2" BitName="（直流）A相模块温度告警" />
+      <list BitId="5" BitName="直流电感温度告警" />
+      <list BitId="10" BitName="直流绝缘阻抗低告警" />
+      <list BitId="15" BitName="直流负荷开关温度告警" />
+    </bit>
+    <bit id="2" StateType="Waring" DataName="整流单元1告警寄存器2">
+      <list BitId="0" BitName="保留" />
+    </bit>
+    <bit id="3" StateType="Waring" DataName="整流单元1告警寄存器3">
+      <list BitId="0" BitName="（交流）C相模块温度告警" />
+      <list BitId="1" BitName="（交流）B相模块温度告警" />
+      <list BitId="2" BitName="（交流）A相模块温度告警" />
+      <list BitId="5" BitName="交流电感温度告警" />
+      <list BitId="10" BitName="交流绝缘阻抗低告警" />
+      <list BitId="11" BitName="机器凝露告警" />
+      <list BitId="12" BitName="门禁打开告警" />
+      <list BitId="15" BitName="交流框架断路器温度告警" />
+    </bit>
+    <bit id="4" StateType="Waring" DataName="整流单元1告警寄存器4">
+      <list BitId="0" BitName="保留" />
+    </bit>
+    <discrete id="1" StateType="Event" DataName="整机工作状态">
+      <list Var="100" VarName="自检中" />
+      <list Var="200" VarName="待机" />
+      <list Var="300" VarName="启动中" />
+      <list Var="400" VarName="正常运行" />
+      <list Var="401" VarName="告警运行" />
+      <list Var="402" VarName="限幅运行" />
+      <list Var="403" VarName="降额运行" />
+      <list Var="500" VarName="正常关机" />
+      <list Var="501" VarName="故障关机" />
+      <list Var="502" VarName="急停关机" />
+    </discrete>
+    <discrete id="2" StateType="Event" DataName="整流单元1工作状态">
+      <list Var="100" VarName="自检中" />
+      <list Var="200" VarName="待机" />
+      <list Var="300" VarName="启动中" />
+      <list Var="400" VarName="正常运行" />
+      <list Var="401" VarName="告警运行" />
+      <list Var="402" VarName="限幅运行" />
+      <list Var="403" VarName="降额运行" />
+      <list Var="500" VarName="正常关机" />
+      <list Var="501" VarName="故障关机" />
+      <list Var="502" VarName="急停关机" />
+      <list Var="1000" VarName="通讯异常" />
+    </discrete>
+  </appendix>
+</root>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.utils.setState"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.utils"
+        mc:Ignorable="d"
+        Title="设置状态" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="dgCell" TargetType="TextBlock">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="349" Margin="39,29,0,0" VerticalAlignment="Top" Width="717">
+            <DataGrid x:Name="resultGrid" Height="351" Background="#FFEAF0EB" CanUserAddRows="False" AutoGenerateColumns="False" EnableRowVirtualization="false">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding name}" ElementStyle="{StaticResource dgCell}" Header="名称" Width="*" IsReadOnly="True" CanUserSort="False"/>
+                    <DataGridTextColumn Binding="{Binding value}" ElementStyle="{StaticResource dgCell}" Header="状态" Width="*" IsReadOnly="True" CanUserSort="False"/>
+                </DataGrid.Columns>
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

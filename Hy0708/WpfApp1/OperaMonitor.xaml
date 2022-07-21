@@ -1,0 +1,294 @@
+﻿<Window x:Class="WpfApp1.OperaMonitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:util="clr-namespace:WpfApp1.utils"
+        xmlns:custom="clr-namespace:WpfApp1.component"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:zedgraph="clr-namespace:ZedGraph;assembly=ZedGraph"
+        mc:Ignorable="d"
+        Title="制氢电源调试软件V2.37"
+        Icon="Resources/img/background.ico"
+        Height="768" Width="1366" WindowState="Maximized" AllowDrop="True" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="dgCell" TargetType="TextBlock">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Viewbox Stretch="Fill">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas Width="1366" Height="768" Grid.ColumnSpan="11" Margin="1,0,2.6,0">
+                <Image HorizontalAlignment="Left" Height="130" VerticalAlignment="Top"  Width="167" Source="./Resources/img/leftUp.jpg" Stretch="Fill" Margin="0,0,0,0" OpacityMask="#FF040D36" Canvas.Top="-1" />
+                <Image HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="106" Source="./Resources/img/LOGO白色1.png" Stretch="Fill" RenderTransformOrigin="1.075,0.562" Canvas.Left="30" Canvas.Top="20"/>
+                <Grid HorizontalAlignment="Left" Height="648" Margin="0,120,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="167" Background="#FF040D36">
+                    <!--<Image x:Name="left1" Stretch="Fill" Canvas.Top="126" />-->
+                    <custom:ImageRadioButton x:Name="EquipMoni" Style="{StaticResource hlayoutImageRadioButton}" ImageSource="Resources/img/设备信息.png" Margin="37,80,39,526" Width="Auto" FontSize="13" Content="设备监控" Click="equipMoni_Click"/>
+                    <custom:ImageRadioButton x:Name="WaveShow" Style="{StaticResource hlayoutImageRadioButton}" ImageSource="Resources/img/示波.png" Margin="37,134,39,472" Width="Auto" FontSize="13" Content="故障录波" Click="waveShow_Click"/>
+                    <custom:ImageRadioButton x:Name="Upgrade" Style="{StaticResource hlayoutImageRadioButton}" ImageSource="Resources/img/升级.png" Margin="37,188,39,418" Width="Auto" FontSize="13" Content="在线升级" Click="upgradeShow_Click"/>
+                    <custom:ImageRadioButton x:Name="History" Style="{StaticResource hlayoutImageRadioButton}" ImageSource="Resources/img/历史记录.png" Margin="37,242,39,364" Width="Auto" FontSize="13" Content="历史记录" Click="historyRecord_Click"/>
+                </Grid>
+                <Image HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="73" Source="./Resources/img/管理员1.png" RenderTransformOrigin="10.296,1.275" Stretch="Fill" Canvas.Left="47" Canvas.Top="86"/>
+                <Label x:Name="SysTime" Content="123456789101112131415" Height="23" Canvas.Left="1089" Canvas.Top="37" Width="158"/>
+                <Label x:Name="ip" Content="IP地址：" Height="23" Canvas.Left="172" Canvas.Top="37"/>
+                <TextBox x:Name="ipAddress" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="23" Canvas.Left="220" TextWrapping="Wrap" Text="192.168.11.212" Canvas.Top="37" Width="120" FontSize="13" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Label x:Name="port" Content="端口号：" Height="23" Canvas.Left="345" Canvas.Top="37"/>
+                <TextBox x:Name="portContent" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="23" Canvas.Left="393" Text="502" FontSize="13" Canvas.Top="37" Width="57"/>
+                <Label Content="SlaveId:" Canvas.Left="458" Canvas.Top="37" Height="23"/>
+                <TextBox x:Name="slaveId2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="23" Canvas.Left="511" TextWrapping="Wrap" Text="1" Canvas.Top="37" Width="50"/>
+                <Button x:Name="connect" Content="连接" Canvas.Left="585" Canvas.Top="37" Width="63" Height="23"  Background="Orange" Foreground="White" BorderBrush="Orange" RenderTransformOrigin="0.257,0.289" Click="connect_Click"/>
+                <Button x:Name="importXML" Content="导入配置文件" Width="83" Height="23" Background="Orange" Foreground="White" BorderBrush="Orange" HorizontalAlignment="Left" VerticalAlignment="Top" Click="importXML_Click" Canvas.Left="782" Canvas.Top="37" RenderTransformOrigin="-0.443,0.77"/>
+                <Ellipse x:Name="status" Fill="Red" Height="25" Canvas.Left="670" Stroke="Transparent" Canvas.Top="37" Width="25" MouseEnter="status_MouseEnter" MouseLeave="status_MouseLeave"/>
+                <Label Name="connectLabel" Content="通信连接状态" Canvas.Left="641" Canvas.Top="17" Height="29" Foreground="Orange" Visibility="Hidden"/>
+                <Ellipse x:Name="workStatus" Fill="Yellow" Height="50" Width="50" Canvas.Left="931" Canvas.Top="23" Stroke="Transparent" MouseEnter="workStatus_MouseEnter" MouseLeave="workStatus_MouseLeave"/>
+                <Label Name="workLabel" Content="整机工作状态" Canvas.Left="917" Canvas.Top="2" Height="29" Foreground="Orange" Visibility="Hidden"/>
+                <!--<ComboBox x:Name="comboBox" Canvas.Left="167" Canvas.Top="114" Width="200" Height="26" IsReadOnly="True" DisplayMemberPath="Frequ" SelectionChanged="comBox_SelectionChanged"/>-->
+                <!--
+                
+                <Ellipse Fill="#FFF53902" Height="20" Canvas.Left="1218"  Canvas.Top="34" Width="20" RenderTransformOrigin="0.604,0.679"/>
+                -->
+                <!--=========================实时监控与设置===========================================-->
+                <Grid x:Name="monitor" Visibility="Visible" Height="703" Canvas.Left="167" Canvas.Top="65" Width="1189">
+                    <ListBox x:Name="listBox" Canvas.Left="167" Canvas.Top="96" BorderBrush="White" SelectionChanged="listBox_SelectionChanged" Margin="0,41,999,10"/>
+                    <TabControl x:Name="tabControl" Canvas.Left="367" Canvas.Top="96" SelectionChanged="TabControl_SelectionChanged" Margin="190,41,44,10">
+                        <TabItem Header="实时信息">
+                            <StackPanel Grid.Row="0" Height="630" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Canvas.Left="449" Canvas.Top="136" Margin="0,-2,-1,-3">
+                                <DataGrid x:Name="realGrid" HeadersVisibility="Column" GridLinesVisibility="Horizontal" Height="636" BorderThickness="2" AutoGenerateColumns="False" HorizontalGridLinesBrush="Gray" CanUserAddRows="False" LoadingRow="DataGrid_LoadingRow" SelectionMode="Single" Margin="-1,0,0,0" IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <!--<DataGridTextColumn Binding="{Binding Seq}" Header="序号" Width="60" IsReadOnly="True" CanUserSort="False"/>-->
+                                        <DataGridTemplateColumn  Width="0.2*" ClipboardContentBinding="{x:Null}" Header="序号">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type DataGridRow}},Path=Header, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+
+                                        <DataGridTextColumn Binding="{Binding Name}" ElementStyle="{StaticResource dgCell}" Header="参数名称" Width="300" IsReadOnly="True" CanUserSort="False"/>
+                                        <DataGridTextColumn Binding="{Binding Value}" ElementStyle="{StaticResource dgCell}" Header="参数值" Width=" *" IsReadOnly="True" CanUserSort="False"/>
+                                        <DataGridTextColumn Binding="{Binding Unit}" ElementStyle="{StaticResource dgCell}" Header="单位" Width="*" IsReadOnly="True" CanUserSort="False"/>
+                                    </DataGrid.Columns>
+                                    <DataGrid.ColumnHeaderStyle>
+                                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGrid.ColumnHeaderStyle>
+                                </DataGrid>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="参数设置">
+                            <Grid Background="#FFE5E5E5" Margin="0,0,-7,-15">
+                                <Button x:Name="setting" Content="设置" Click="setting_Click" Background="Orange" Margin="812,0,83,615"></Button>
+                                <Button x:Name="callBack" Content="回读"  Click="callBack_Click" Background="Orange" Margin="885,0,10,615"></Button>
+                                <StackPanel Grid.Row="0" Height="600" VerticalAlignment="Bottom" Canvas.Left="449" Canvas.Top="136" Margin="0,0,0,10">
+                                    <DataGrid x:Name="setGrid" GridLinesVisibility="Horizontal" Height="599" BorderThickness="2" AutoGenerateColumns="False" HorizontalGridLinesBrush="Gray" EnableRowVirtualization="True" EnableColumnVirtualization="True" CanUserAddRows="False" SelectionMode="Single">
+                                        <DataGrid.Columns>
+                                            <DataGridTemplateColumn>
+                                                <!--<DataGridTemplateColumn.Header>
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <CheckBox Grid.Row="0" Grid.Column="0" x:Name="Set_AllSelect" Click="Set_AllSelect_Click" HorizontalAlignment="Center" ></CheckBox>
+                                                    </Grid>
+                                                </DataGridTemplateColumn.Header>-->
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Grid>
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition/>
+                                                            </Grid.RowDefinitions>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="40"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <CheckBox x:Name="Set_Select" Click="Set_Select_Click" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"  IsChecked="{Binding Selected}"></CheckBox>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+                                            <DataGridTextColumn Binding="{Binding Name}" ElementStyle="{StaticResource dgCell}" Header="参数名称" Width="300" IsReadOnly="True" CanUserSort="False"/>
+                                            <!--<DataGridTextColumn Binding="{Binding Value}" ElementStyle="{StaticResource dgCell}" Header="参数值" Width=" 300" CanUserSort="False"/>-->
+                                            <DataGridTemplateColumn  Width="300" ClipboardContentBinding="{x:Null}" Header="参数值">
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBox Text ="{Binding Value, UpdateSourceTrigger=LostFocus}" Width="200" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+                                            <DataGridTextColumn Binding="{Binding Unit}" ElementStyle="{StaticResource dgCell}" Header="单位" Width="*" IsReadOnly="True" CanUserSort="False"/>
+                                            <DataGridTextColumn Binding="{Binding Scope}" ElementStyle="{StaticResource dgCell}" Header="数据范围" Width="*" IsReadOnly="True" CanUserSort="False"/>
+                                        </DataGrid.Columns>
+                                        <DataGrid.ColumnHeaderStyle>
+                                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                            </Style>
+                                        </DataGrid.ColumnHeaderStyle>
+                                    </DataGrid>
+                                </StackPanel>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+
+                <!--=========================故障录波===========================================-->
+                <Grid x:Name="wave" Visibility="Collapsed" Height="703" Canvas.Left="167" Canvas.Top="65" Width="1189">
+                    <Button x:Name="query" Content="查询录波" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.274,0.579" Click="query_Click" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" Grid.ColumnSpan="2"/>
+                    <Button x:Name="waveON" Content="开启录波" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="75" Click="waveON_Click" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange"/>
+                    <Button x:Name="getfile" Content="文件获取" Visibility="Hidden" HorizontalAlignment="Left" Margin="141,664,0,0" VerticalAlignment="Top" Width="60" Click="getfile_Click" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" IsEnabled="True"/>
+                    <Button x:Name="download" Content="文件下载" HorizontalAlignment="Left" Margin="215,664,0,0" VerticalAlignment="Top" Width="60" Click="download_Click" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" IsEnabled="True"/>
+                    <Button x:Name="delete" Content="删除文件" HorizontalAlignment="Left" Margin="288,664,0,0" VerticalAlignment="Top" Width="60" Click="delete_Click"  Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" IsEnabled="True"/>
+                    <Button x:Name="back" Content="返回上级目录" HorizontalAlignment="Left" Margin="10,664,0,0" VerticalAlignment="Top" Width="80" Height="29" RenderTransformOrigin="0.124,0.676" Background="Orange" Foreground="Black" BorderBrush="Orange" IsEnabled="False" Click="back_Click"/>
+                    <StackPanel HorizontalAlignment="Left" Height="610" Margin="10,54,0,0" VerticalAlignment="Top" Width="338">
+                        <ListBox x:Name="fileList" Height="611" MouseDoubleClick="fileList_MouseDoubleClick"/>
+                    </StackPanel>
+                    <util:WaveLoading x:Name="waveHolding"  Visibility="Collapsed" Margin="0,0,841,0"/>
+                    <Grid Margin="348,54,0,10">
+                        <!--设备列表-->
+                        <ComboBox x:Name="devList" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="26" FontSize="13" SelectionChanged="waveList_SelectionChanged" Visibility="Collapsed">
+                            <!--<ComboBoxItem Content="请选择设备" Visibility="Collapsed"></ComboBoxItem>-->
+                        </ComboBox>
+                        <wfi:WindowsFormsHost Margin="0,26,0,212" >
+                            <zedgraph:ZedGraphControl x:Name="Fault_waveform" IsShowPointValues="True"/>
+                        </wfi:WindowsFormsHost>
+                        <DataGrid x:Name="dataGridCorrugated" HorizontalAlignment="Center" Height="212" VerticalAlignment="Top" Width="841" ColumnHeaderHeight="30" CanUserAddRows="False" HeadersVisibility="Column" CanUserReorderColumns="True" AutoGenerateColumns="False" Margin="0,427,0,0">
+                            <DataGrid.ContextMenu>
+                                <ContextMenu>
+                                    <StackPanel Orientation="Vertical">
+                                        <MenuItem Header="LoadForm" Click="LoadForm_Click"></MenuItem>
+                                        <!--<MenuItem Header="Clear"></MenuItem>
+                                        <MenuItem Header="SetCurveColor"></MenuItem>
+                                        <MenuItem Header="SetBackColor"></MenuItem>-->
+                                    </StackPanel>
+                                </ContextMenu>
+                            </DataGrid.ContextMenu>
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <CheckBox x:Name="CorrugatedCheckBox_Select" Width="20" Grid.Row="0" Grid.Column="0" IsChecked="{Binding Selected}" Click="CorrugatedCheckBox_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Binding="{Binding Name}" ElementStyle="{StaticResource dgCell}" Width="*" ClipboardContentBinding="{x:Null}" Header="波形代码" IsReadOnly="False"></DataGridTextColumn>
+                                <DataGridTextColumn Binding="{Binding AllPoints}" ElementStyle="{StaticResource dgCell}" Width="*" ClipboardContentBinding="{x:Null}" Header="总点数" IsReadOnly="False"></DataGridTextColumn>
+                                <DataGridTextColumn Binding="{Binding FaultPoint}" ElementStyle="{StaticResource dgCell}" Width="*" Header="故障点数" IsReadOnly="False"></DataGridTextColumn>
+                                <DataGridTextColumn Binding="{Binding AfterTime}" ElementStyle="{StaticResource dgCell}" Width="*" Header="后时长" IsReadOnly="False"></DataGridTextColumn>
+                                <DataGridTextColumn Binding="{Binding BehindPoints}" ElementStyle="{StaticResource dgCell}" Width="*" Header="后点数" IsReadOnly="False"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                            <DataGrid.ColumnHeaderStyle>
+                                <Style TargetType="{x:Type DataGridColumnHeader}">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                </Style>
+                            </DataGrid.ColumnHeaderStyle>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+
+                <!--=========================在线升级===========================================-->
+                <Grid x:Name="upgrade" Visibility="Collapsed" Height="703" Canvas.Left="167" Canvas.Top="65" Width="1189">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="139*"/>
+                        <ColumnDefinition Width="804*"/>
+                        <ColumnDefinition Width="85*"/>
+                        <ColumnDefinition Width="12*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="sourceName" Content="升级源文件：" HorizontalAlignment="Left" Margin="19,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.185,-0.965" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="sourceFile" HorizontalAlignment="Left" Height="25" Margin="2,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Grid.ColumnSpan="4" Grid.Column="1"/>
+                    <Button x:Name="browse" Content="浏览..." HorizontalAlignment="Left" Margin="153.337,25,0,0" VerticalAlignment="Top" Width="74" Height="25" Background="Orange" Foreground="White" BorderBrush="Orange" Click="browse_Click" Grid.Column="4"/>
+                    <Button x:Name="upload" Content="文件上传" HorizontalAlignment="Left" Margin="232.337,25,0,0" VerticalAlignment="Top" Width="82" Height="25" Background="#FF0DABF5" Foreground="#FFF5EEEE" BorderBrush="#FF0DABF5" Click="upload_Click" Grid.Column="4"/>
+                    <Button x:Name="turnUp" Content="固件上传" HorizontalAlignment="Left" Margin="724.337,47,0,0" VerticalAlignment="Top" Width="75" Background="Orange" Foreground="White" BorderBrush="Orange" Click="uploadG_Click" Grid.Column="4"/>
+                    <Button x:Name="upgradeButton" Content="升级" HorizontalAlignment="Left" Margin="0,47,0,0" VerticalAlignment="Top" Width="75" Background="Orange" Foreground="White" BorderBrush="Orange" Click="uploadResult_Click" Grid.Column="5" IsEnabled="False"/>
+                    <DataGrid x:Name="upgradeGrid" HorizontalAlignment="Left" Height="603" Margin="0,73,0,0" VerticalAlignment="Top" Width="1189" ColumnHeaderHeight="40" RowHeight="40" CanUserAddRows="False" HeadersVisibility="Column" CanUserReorderColumns="True" AutoGenerateColumns="False" Grid.ColumnSpan="7">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.Header>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <CheckBox x:Name="upgrade_AllSelect" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                                    </Grid>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="40" />
+                                            </Grid.ColumnDefinitions>
+                                            <CheckBox x:Name="upgrade_Select" Grid.Row="0" Grid.Column="0" IsChecked="{Binding Selected}" HorizontalAlignment="Center">
+                                            </CheckBox>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Name}" Header="名称" Width="*" ElementStyle="{StaticResource dgCell}"/>
+                            <DataGridTextColumn Binding="{Binding FirmwareCode}" Header="固件编码" Width="*" ElementStyle="{StaticResource dgCell}"/>
+                            <DataGridTextColumn Binding="{Binding FirmwareVersion}" Header="固件版本号" Width="*" ElementStyle="{StaticResource dgCell}"/>
+                            <DataGridTemplateColumn x:Name="Progresss" Header="升级进度" Width="1.5*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <ProgressBar  x:Name="pbBar" Value="{Binding Progress}" Background="Transparent" BorderBrush="Transparent" Width="180" Height="20">
+                                            </ProgressBar>
+                                            <TextBlock Text="{Binding ProgressValue}" Height="20"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Result}" Header="升级结果" Width="0.5*" ElementStyle="{StaticResource dgCell}"/>
+                        </DataGrid.Columns>
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                    </DataGrid>
+                    <util:MyLoading x:Name="_loading"  Visibility="Collapsed" Grid.ColumnSpan="7"/>
+                </Grid>
+
+
+                <!--=========================历史记录===========================================-->
+                <Grid x:Name="history" Visibility="Collapsed" Height="703" Canvas.Left="167" Canvas.Top="65" Width="1189">
+                    
+                    <Grid HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="946" Margin="243,64,0,0">
+                        <ComboBox x:Name="sql_comboBox" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" SelectionChanged="sql_comboBox_SelectionChanged" Visibility="Collapsed"/>
+                    </Grid>
+                    <DataGrid x:Name="historyRecord" CanUserAddRows="False" HorizontalAlignment="Left" Height="602" Margin="243,101,0,0" VerticalAlignment="Top" Width="946" AutoGenerateColumns ="True" ColumnWidth="*"/>
+                    <Grid HorizontalAlignment="Left" Height="622" Margin="0,81,0,0" VerticalAlignment="Top" Width="243" Background="White">
+                        <Button x:Name="sqlGet" Content="文件获取" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" Click="sqlGet_Click"/>
+                        <!--
+                        <Button x:Name="sqlDele" Content="文件删除" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="75,0,0,0" Height="29" Background="Orange" Foreground="Black" BorderBrush="Orange" Click="sqlDele_Click"/>
+                        -->
+                        <ListBox x:Name="getList" SelectionMode="Extended" Margin="0,29,0,322">
+                            <!--<ListBox.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header="Show" Click="btnShowSelectItems"></MenuItem>
+                                    </ContextMenu>
+                                </ListBox.ContextMenu>-->
+                        </ListBox>
+                        <Button x:Name="sqlDown" Content="文件下载" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="29" RenderTransformOrigin="0.898,0.471" Background="Orange" Foreground="Black" BorderBrush="Orange" Click="sqlDown_Click" Margin="0,305,0,0"/>
+                        <Button x:Name="browseFile" Content="浏览" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="29" RenderTransformOrigin="0.898,0.471" Background="Orange" Foreground="Black" BorderBrush="Orange" Margin="75,305,0,0" Click="browseFile_Click"/>
+                        <ListBox x:Name="showList" SelectionChanged="showList_SelectionChanged" Margin="0,334,0,0"/>
+                    </Grid>
+                </Grid>
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>

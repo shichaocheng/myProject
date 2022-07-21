@@ -1,0 +1,42 @@
+
+----------------------2022/7/7 15:43:03 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 967
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:44:38 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 967
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:48:17 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 967
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------

@@ -1,0 +1,1081 @@
+
+----------------------2022/7/7 15:52:05 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:53:03 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:54:05 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:54:56 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:57:19 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 15:57:37 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 16:00:33 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 16:13:26 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 16:21:38 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__46_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 971
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+----------------------footer--------------------------
+
+----------------------2022/7/7 16:37:19 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:10:50 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:10:50 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:11:01 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:12:47 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:12:47 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:12:47 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:12:47 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:13:49 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:13:49 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:13:49 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:13:49 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:14:44 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:14:44 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:15:27 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:15:27 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:15:27 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:16:41 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:16:44 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:18:34 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:18:35 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:00 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:29 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:19:58 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:22:30 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:23:21 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:23:21 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:23:21 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:23:21 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:23:21 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:25:53 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:10 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:10 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:10 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:17 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:17 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:26:19 --------------------------
+未通过等待任务或访问任务的 Exception 属性观察到任务的异常。因此，终结器线程重新引发了未观察到的异常。
+System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<getRealData>b__47_0() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+
+----------------------footer--------------------------
+
+----------------------2022/7/7 17:32:50 --------------------------
+目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 Modbus.ModbusTcp.ReadInputRegisters4(Byte deviceAddr1, Int32 startAddr, Int32 num, Byte[] buf) 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\utils\ModbusTcp.cs:行号 362
+   在 WpfApp1.OperaMonitor.<<getRealData>b__47_0>d.MoveNext() 位置 C:\Users\chengshichao\Desktop\Hy0706\Hy0707\WpfApp1\OperaMonitor.xaml.cs:行号 1199
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_1(Object state)
+   在 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+----------------------footer--------------------------
